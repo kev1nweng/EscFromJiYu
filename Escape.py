@@ -6,6 +6,8 @@ import time
 from os import system
 import win32gui
 import win32con
+import win32api
+import win32gui_struct
 from pynput import keyboard
 from ctypes import *
 import signal
@@ -19,6 +21,7 @@ def c():
 def wait():
     time.sleep(3)
 
+# 防止 Ctrl+C Traceback 并退出
 def signal_handler(signal,frame):
 
     print('\n\n[!] 你按下了Ctrl+C，正在退出程序...')
@@ -29,12 +32,12 @@ def signal_handler(signal,frame):
 signal.signal(signal.SIGINT,signal_handler)
 
 stage = "Pre-Alpha"
-version = "0.1.0"
+version = "0.1.1"
 
 # 菜单
 def menu():
     funcChoice = ""
-
+    r("mode con cols=50 lines=30")
     r("cls")
     r("title Escape >nul")
     time.sleep(0.5)
@@ -50,13 +53,14 @@ def menu():
 
     time.sleep(0.1)
     print("\n+菜单\n")
-    print("0. #Test#")
     print("1. 立即结束极域教室主进程")
     print("2. 置顶操作")
     print("+ 2.1 置顶窗口")
     print("+ 2.2 取消置顶")
     print("3. 对进程注入DLL文件")
     print("4. 解除强制断网")
+    print("5. 破解U盘禁用")
+    print("0. 退出")
 
 
     while True:
@@ -69,16 +73,22 @@ def menu():
             menu()
 
     if funcChoice == 0:
-        test()
+        print('\n\n[!] 正在退出程序...')
+        time.sleep(1)
+        c()
+        sys.exit(0)
 
     if funcChoice == 1:
         kill("StudentMain.exe")
+        print("\n[+] 执行完成。")
+        wait()
+        menu()
 
     if funcChoice == 2.1:
         wT = ""
         wT = str(input("\n输入你要置顶的窗口名: "))
         pin(wT)
-        print("[+] 执行完成。")
+        print("\n[+] 执行完成。")
         wait()
         menu()
 
@@ -86,7 +96,7 @@ def menu():
         wT = ""
         wT = str(input("\n输入你要取消置顶的窗口名: "))
         unpin(wT)
-        print("[+] 执行完成。")
+        print("\n[+] 执行完成。")
         wait()
         menu()
 
@@ -101,15 +111,20 @@ def menu():
         r("taskkill /f /im GATESRV.exe >nul 2>nul")
         r("taskkill /f /im MasterHelper.exe >nul 2>nul")
         r("sc stop TDNetFilter >nul 2>nul")
-        print("\n执行完成。极域网络滤网已被关闭。")
+        print("\n[+] 执行完成。极域网络滤网已被关闭。")
         wait()
         menu()
 
     if funcChoice == 5:
-        r("sc stop TDFileFilter")
-        r("sc delete TDFileFilter")
-        print("\n执行完成。极域文件控制服务已被卸载。")
+        r("sc stop TDFileFilter >nul 2>nul")
+        r("sc delete TDFileFilter >nul 2>nul")
+        print("\n[+] 执行完成。极域文件控制服务已被卸载。")
+        wait()
+        menu()
 
+    menu()
+
+# 功能定义
 def test():
     input()
 
@@ -120,7 +135,6 @@ def kill(programName):
         r(command)
     except Exception:
         print("\n[!] 执行出现错误。请检查输入内容是否正确后重试。")
-        wait()
 
 
 def pin(windowTitle):
@@ -197,6 +211,7 @@ def inject(pid, dll_path):
         menu()
 
     print ("[+] 成功创建远程进程 0x%08x." %(thread_id.value))
-
+    wait()
+    menu()
 
 menu()
