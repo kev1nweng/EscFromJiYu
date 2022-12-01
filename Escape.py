@@ -56,6 +56,7 @@ def menu():
     print("+ 2.1 置顶窗口")
     print("+ 2.2 取消置顶")
     print("3. 对进程注入DLL文件")
+    print("4. 解除强制断网")
 
 
     while True:
@@ -96,6 +97,18 @@ def menu():
         inject(injectPID, injectDLL)
         menu()
 
+    if funcChoice == 4:
+        r("taskkill /f /im GATESRV.exe >nul 2>nul")
+        r("taskkill /f /im MasterHelper.exe >nul 2>nul")
+        r("sc stop TDNetFilter >nul 2>nul")
+        print("\n执行完成。极域网络滤网已被关闭。")
+        wait()
+        menu()
+
+    if funcChoice == 5:
+        r("sc stop TDFileFilter")
+        r("sc delete TDFileFilter")
+        print("\n执行完成。极域文件控制服务已被卸载。")
 
 def test():
     input()
