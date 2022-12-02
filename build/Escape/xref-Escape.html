@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>modulegraph cross reference for Escape.py, pyi_rth_pywintypes.py, pyi_rth_subprocess.py</title>
+    <title>modulegraph cross reference for Escape.py, pyi_rth_inspect.py, pyi_rth_pywintypes.py, pyi_rth_subprocess.py</title>
     <style>
       .node { padding: 0.5em 0 0.5em; border-top: thin grey dotted; }
       .moduletype { font: smaller italic }
@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <h1>modulegraph cross reference for Escape.py, pyi_rth_pywintypes.py, pyi_rth_subprocess.py</h1>
+    <h1>modulegraph cross reference for Escape.py, pyi_rth_inspect.py, pyi_rth_pywintypes.py, pyi_rth_subprocess.py</h1>
 
 <div class="node">
   <a name="Escape.py"></a>
@@ -26,7 +26,6 @@ imports:
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#copyreg">copyreg</a>
- &#8226;   <a href="#ctypes">ctypes</a>
  &#8226;   <a href="#encodings">encodings</a>
  &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
  &#8226;   <a href="#encodings.ascii">encodings.ascii</a>
@@ -164,19 +163,15 @@ imports:
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#posixpath">posixpath</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_pywintypes.py">pyi_rth_pywintypes.py</a>
  &#8226;   <a href="#pyi_rth_subprocess.py">pyi_rth_subprocess.py</a>
- &#8226;   <a href="#pynput">pynput</a>
- &#8226;   <a href="#pynput.keyboard">pynput.keyboard</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#reprlib">reprlib</a>
- &#8226;   <a href="#signal">signal</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#stat">stat</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#time">time</a>
  &#8226;   <a href="#token">token</a>
  &#8226;   <a href="#tokenize">tokenize</a>
  &#8226;   <a href="#traceback">traceback</a>
@@ -187,12 +182,28 @@ imports:
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib.response">urllib.response</a>
  &#8226;   <a href="#urllib.robotparser">urllib.robotparser</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
- &#8226;   <a href="#win32api">win32api</a>
- &#8226;   <a href="#win32con">win32con</a>
- &#8226;   <a href="#win32gui">win32gui</a>
- &#8226;   <a href="#win32gui_struct">win32gui_struct</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="pyi_rth_inspect.py"></a>
+  <a target="code" href="///C:/Users/weng_/AppData/Local/Programs/Python/Python38-32/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_inspect.py" type="text/plain"><tt>pyi_rth_inspect.py</tt></a>
+<span class="moduletype">Script</span>  <div class="import">
+imports:
+    <a href="#inspect">inspect</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#Escape.py">Escape.py</a>
 
   </div>
 
@@ -328,11 +339,33 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="'gi.repository'"></a>
+  <a target="code" href="" type="text/plain"><tt>'gi.repository'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#playsound">playsound</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'java.lang'"></a>
+  <a target="code" href="" type="text/plain"><tt>'java.lang'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#platform">platform</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="'org.python'"></a>
   <a target="code" href="" type="text/plain"><tt>'org.python'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#copy">copy</a>
+    <a href="#pickle">pickle</a>
 
   </div>
 
@@ -343,7 +376,8 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>AppKit</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#pynput.mouse._darwin">pynput.mouse._darwin</a>
+    <a href="#playsound">playsound</a>
+ &#8226;   <a href="#pynput.mouse._darwin">pynput.mouse._darwin</a>
 
   </div>
 
@@ -355,6 +389,17 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#pynput._util.darwin">pynput._util.darwin</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="Foundation"></a>
+  <a target="code" href="" type="text/plain"><tt>Foundation</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#playsound">playsound</a>
 
   </div>
 
@@ -422,6 +467,16 @@ imported by:
   <tt>_abc</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#abc">abc</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="_ast"></a>
+  <tt>_ast</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
+imported by:
+    <a href="#ast">ast</a>
 
   </div>
 
@@ -810,6 +865,16 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="_opcode"></a>
+  <tt>_opcode</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
+imported by:
+    <a href="#opcode">opcode</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="_operator"></a>
   <tt>_operator</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
@@ -1150,6 +1215,17 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="_winreg"></a>
+  <a target="code" href="" type="text/plain"><tt>_winreg</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#platform">platform</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="abc"></a>
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/abc.py" type="text/plain"><tt>abc</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -1167,6 +1243,7 @@ imported by:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#selectors">selectors</a>
@@ -1194,7 +1271,9 @@ imports:
   <div class="import">
 imported by:
     <a href="#calendar">calendar</a>
+ &#8226;   <a href="#dis">dis</a>
  &#8226;   <a href="#gzip">gzip</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#tokenize">tokenize</a>
  &#8226;   <a href="#zipfile">zipfile</a>
@@ -1208,6 +1287,25 @@ imported by:
   <tt>array</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#win32gui_struct">win32gui_struct</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="ast"></a>
+  <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/ast.py" type="text/plain"><tt>ast</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#_ast">_ast</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#inspect">inspect</a>
 
   </div>
 
@@ -1294,6 +1392,7 @@ imported by:
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#operator">operator</a>
@@ -1520,12 +1619,16 @@ imports:
   <div class="import">
 imported by:
     <a href="#Escape.py">Escape.py</a>
+ &#8226;   <a href="#ast">ast</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#configparser">configparser</a>
  &#8226;   <a href="#contextlib">contextlib</a>
+ &#8226;   <a href="#dis">dis</a>
  &#8226;   <a href="#email.feedparser">email.feedparser</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#selectors">selectors</a>
@@ -1559,6 +1662,7 @@ imported by:
     <a href="#Escape.py">Escape.py</a>
  &#8226;   <a href="#configparser">configparser</a>
  &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#selectors">selectors</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
@@ -1643,8 +1747,8 @@ imported by:
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/copy.py" type="text/plain"><tt>copy</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'org.python'">'org.python'</a>
- &#8226;   <a href="#copyreg">copyreg</a>
+    <a href="#copyreg">copyreg</a>
+ &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#weakref">weakref</a>
 
@@ -1713,16 +1817,18 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
- &#8226;   <a href="#ctypes._aix">ctypes._aix</a>
+    <a href="#ctypes._aix">ctypes._aix</a>
  &#8226;   <a href="#ctypes._endian">ctypes._endian</a>
  &#8226;   <a href="#ctypes.macholib">ctypes.macholib</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#pynput._util.darwin">pynput._util.darwin</a>
  &#8226;   <a href="#pynput._util.win32">pynput._util.win32</a>
  &#8226;   <a href="#pynput.keyboard._win32">pynput.keyboard._win32</a>
  &#8226;   <a href="#pynput.mouse._win32">pynput.mouse._win32</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -1901,6 +2007,27 @@ imported by:
  &#8226;   <a href="#calendar">calendar</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="dis"></a>
+  <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/dis.py" type="text/plain"><tt>dis</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#argparse">argparse</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#opcode">opcode</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#inspect">inspect</a>
 
   </div>
 
@@ -4912,6 +5039,7 @@ imports:
 imported by:
     <a href="#Escape.py">Escape.py</a>
  &#8226;   <a href="#http">http</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#pynput.keyboard._base">pynput.keyboard._base</a>
  &#8226;   <a href="#pynput.keyboard._darwin">pynput.keyboard._darwin</a>
@@ -5031,6 +5159,7 @@ imported by:
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#operator">operator</a>
@@ -5151,6 +5280,17 @@ imported by:
     <a href="#argparse">argparse</a>
  &#8226;   <a href="#getopt">getopt</a>
  &#8226;   <a href="#optparse">optparse</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="gi"></a>
+  <a target="code" href="" type="text/plain"><tt>gi</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#playsound">playsound</a>
 
   </div>
 
@@ -5336,6 +5476,7 @@ imported by:
  &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#pynput._util">pynput._util</a>
 
   </div>
@@ -5424,6 +5565,7 @@ imported by:
     <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#pywintypes">pywintypes</a>
 
@@ -5493,6 +5635,44 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="inspect"></a>
+  <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/inspect.py" type="text/plain"><tt>inspect</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#abc">abc</a>
+ &#8226;   <a href="#argparse">argparse</a>
+ &#8226;   <a href="#ast">ast</a>
+ &#8226;   <a href="#builtins">builtins</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#dis">dis</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#importlib">importlib</a>
+ &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#linecache">linecache</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#token">token</a>
+ &#8226;   <a href="#tokenize">tokenize</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#ast">ast</a>
+ &#8226;   <a href="#playsound">playsound</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="io"></a>
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/io.py" type="text/plain"><tt>io</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -5508,6 +5688,7 @@ imported by:
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#configparser">configparser</a>
  &#8226;   <a href="#csv">csv</a>
+ &#8226;   <a href="#dis">dis</a>
  &#8226;   <a href="#email.feedparser">email.feedparser</a>
  &#8226;   <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.iterators">email.iterators</a>
@@ -5551,6 +5732,7 @@ imported by:
  &#8226;   <a href="#configparser">configparser</a>
  &#8226;   <a href="#ctypes.macholib.dyld">ctypes.macholib.dyld</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#pynput._util.win32">pynput._util.win32</a>
  &#8226;   <a href="#pynput._util.xorg">pynput._util.xorg</a>
@@ -5563,6 +5745,17 @@ imported by:
  &#8226;   <a href="#traceback">traceback</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="java"></a>
+  <a target="code" href="" type="text/plain"><tt>java</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#platform">platform</a>
 
   </div>
 
@@ -5594,6 +5787,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#Escape.py">Escape.py</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#traceback">traceback</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
  &#8226;   <a href="#warnings">warnings</a>
@@ -5656,6 +5850,7 @@ imports:
 imported by:
     <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#pynput">pynput</a>
 
   </div>
@@ -5797,6 +5992,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#os">os</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
 
@@ -5833,6 +6029,22 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="opcode"></a>
+  <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/opcode.py" type="text/plain"><tt>opcode</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#_opcode">_opcode</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#dis">dis</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="operator"></a>
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/operator.py" type="text/plain"><tt>operator</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -5848,6 +6060,7 @@ imported by:
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#email._header_value_parser">email._header_value_parser</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#pynput._util.xorg">pynput._util.xorg</a>
  &#8226;   <a href="#six">six</a>
@@ -5881,7 +6094,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>org</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#pickle">pickle</a>
+    <a href="#copy">copy</a>
 
   </div>
 
@@ -5925,6 +6138,7 @@ imported by:
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
@@ -5935,8 +6149,11 @@ imported by:
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#optparse">optparse</a>
  &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#py_compile">py_compile</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_pywintypes.py">pyi_rth_pywintypes.py</a>
  &#8226;   <a href="#pynput._util">pynput._util</a>
  &#8226;   <a href="#pynput.keyboard._uinput">pynput.keyboard._uinput</a>
@@ -5951,6 +6168,8 @@ imported by:
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
  &#8226;   <a href="#uu">uu</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
@@ -5995,14 +6214,14 @@ imported by:
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/pickle.py" type="text/plain"><tt>pickle</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#_compat_pickle">_compat_pickle</a>
+    <a href="#'org.python'">'org.python'</a>
+ &#8226;   <a href="#_compat_pickle">_compat_pickle</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#struct">struct</a>
@@ -6014,6 +6233,70 @@ imports:
 imported by:
     <a href="#logging">logging</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="platform"></a>
+  <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/platform.py" type="text/plain"><tt>platform</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'java.lang'">'java.lang'</a>
+ &#8226;   <a href="#_winreg">_winreg</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#java">java</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#vms_lib">vms_lib</a>
+ &#8226;   <a href="#winreg">winreg</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#playsound">playsound</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="playsound"></a>
+  <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/site-packages/playsound.py" type="text/plain"><tt>playsound</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'gi.repository'">'gi.repository'</a>
+ &#8226;   <a href="#AppKit">AppKit</a>
+ &#8226;   <a href="#Foundation">Foundation</a>
+ &#8226;   <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#gi">gi</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#ntpath">ntpath</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#urllib">urllib</a>
+ &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#urllib.pathname2url">urllib.pathname2url</a>
+ &#8226;   <a href="#urllib.quote">urllib.quote</a>
+ &#8226;   <a href="#urllib.request">urllib.request</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -6157,14 +6440,15 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
- &#8226;   <a href="#pynput">pynput</a>
+    <a href="#pynput">pynput</a>
  &#8226;   <a href="#pynput._info">pynput._info</a>
  &#8226;   <a href="#pynput._util">pynput._util</a>
  &#8226;   <a href="#pynput.keyboard">pynput.keyboard</a>
  &#8226;   <a href="#pynput.keyboard._base">pynput.keyboard._base</a>
  &#8226;   <a href="#pynput.mouse">pynput.mouse</a>
  &#8226;   <a href="#pynput.mouse._base">pynput.mouse._base</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -6392,8 +6676,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
- &#8226;   <a href="#pynput">pynput</a>
+    <a href="#pynput">pynput</a>
  &#8226;   <a href="#pynput.keyboard">pynput.keyboard</a>
  &#8226;   <a href="#pynput.keyboard._base">pynput.keyboard._base</a>
  &#8226;   <a href="#pynput.keyboard._darwin">pynput.keyboard._darwin</a>
@@ -6401,6 +6684,8 @@ imported by:
  &#8226;   <a href="#pynput.keyboard._uinput">pynput.keyboard._uinput</a>
  &#8226;   <a href="#pynput.keyboard._win32">pynput.keyboard._win32</a>
  &#8226;   <a href="#pynput.keyboard._xorg">pynput.keyboard._xorg</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -6795,6 +7080,7 @@ imported by:
     <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -6843,10 +7129,12 @@ imported by:
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#pynput.keyboard._uinput">pynput.keyboard._uinput</a>
@@ -6974,6 +7262,7 @@ imports:
 imported by:
     <a href="#argparse">argparse</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#zipfile">zipfile</a>
@@ -6994,8 +7283,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
- &#8226;   <a href="#subprocess">subprocess</a>
+    <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -7067,6 +7357,7 @@ imported by:
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
@@ -7242,6 +7533,7 @@ imported by:
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#win32gui_struct">win32gui_struct</a>
@@ -7278,6 +7570,8 @@ imported by:
     <a href="#ctypes._aix">ctypes._aix</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#pyi_rth_subprocess.py">pyi_rth_subprocess.py</a>
  &#8226;   <a href="#pynput.keyboard._uinput">pynput.keyboard._uinput</a>
 
@@ -7289,8 +7583,7 @@ imported by:
   <a name="sys"></a>
   <tt>sys</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
- &#8226;   <a href="#_bootlocale">_bootlocale</a>
+    <a href="#_bootlocale">_bootlocale</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#base64">base64</a>
@@ -7304,6 +7597,7 @@ imported by:
  &#8226;   <a href="#ctypes._endian">ctypes._endian</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#dis">dis</a>
  &#8226;   <a href="#email._header_value_parser">email._header_value_parser</a>
  &#8226;   <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.iterators">email.iterators</a>
@@ -7321,6 +7615,7 @@ imported by:
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
@@ -7330,9 +7625,12 @@ imported by:
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#py_compile">py_compile</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_pywintypes.py">pyi_rth_pywintypes.py</a>
  &#8226;   <a href="#pyi_rth_subprocess.py">pyi_rth_subprocess.py</a>
  &#8226;   <a href="#pynput._util">pynput._util</a>
@@ -7355,6 +7653,8 @@ imported by:
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
  &#8226;   <a href="#uu">uu</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
@@ -7417,6 +7717,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#ctypes.util">ctypes.util</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib.response">urllib.response</a>
 
@@ -7476,6 +7777,7 @@ imported by:
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#pynput._util">pynput._util</a>
  &#8226;   <a href="#pynput._util.win32">pynput._util.win32</a>
  &#8226;   <a href="#pynput.keyboard._base">pynput.keyboard._base</a>
@@ -7497,8 +7799,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
- &#8226;   <a href="#_datetime">_datetime</a>
+    <a href="#_datetime">_datetime</a>
  &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#email._parseaddr">email._parseaddr</a>
@@ -7508,6 +7809,7 @@ imported by:
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#random">random</a>
@@ -7517,6 +7819,8 @@ imported by:
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib.robotparser">urllib.robotparser</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -7529,6 +7833,7 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imported by:
     <a href="#Escape.py">Escape.py</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#tokenize">tokenize</a>
 
   </div>
@@ -7555,6 +7860,7 @@ imports:
 imported by:
     <a href="#Escape.py">Escape.py</a>
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#linecache">linecache</a>
 
   </div>
@@ -7622,11 +7928,13 @@ imported by:
     <a href="#Escape.py">Escape.py</a>
  &#8226;   <a href="#contextlib">contextlib</a>
  &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#dis">dis</a>
  &#8226;   <a href="#email.headerregistry">email.headerregistry</a>
  &#8226;   <a href="#enum">enum</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#six">six</a>
@@ -7679,9 +7987,16 @@ imported by:
   <a name="urllib"></a>
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/urllib/__init__.py" type="text/plain"><tt>urllib</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#urllib.pathname2url">urllib.pathname2url</a>
+ &#8226;   <a href="#urllib.quote">urllib.quote</a>
+
+  </div>
+  <div class="import">
 imported by:
     <a href="#Escape.py">Escape.py</a>
  &#8226;   <a href="#email._header_value_parser">email._header_value_parser</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#urllib.error">urllib.error</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
@@ -7732,8 +8047,33 @@ imported by:
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
  &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib.robotparser">urllib.robotparser</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="urllib.pathname2url"></a>
+  <a target="code" href="" type="text/plain"><tt>urllib.pathname2url</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#playsound">playsound</a>
+ &#8226;   <a href="#urllib">urllib</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="urllib.quote"></a>
+  <a target="code" href="" type="text/plain"><tt>urllib.quote</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#playsound">playsound</a>
+ &#8226;   <a href="#urllib">urllib</a>
 
   </div>
 
@@ -7780,6 +8120,7 @@ imports:
 imported by:
     <a href="#Escape.py">Escape.py</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#playsound">playsound</a>
  &#8226;   <a href="#urllib.robotparser">urllib.robotparser</a>
 
   </div>
@@ -7826,6 +8167,77 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="utils"></a>
+  <a target="code" href="///F:/Github%20Projects/Escape/utils/__init__.py" type="text/plain"><tt>utils</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imported by:
+    <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="utils.shortcuts"></a>
+  <a target="code" href="///F:/Github%20Projects/Escape/utils/shortcuts.py" type="text/plain"><tt>utils.shortcuts</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#playsound">playsound</a>
+ &#8226;   <a href="#pynput">pynput</a>
+ &#8226;   <a href="#pynput.keyboard">pynput.keyboard</a>
+ &#8226;   <a href="#signal">signal</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#utils">utils</a>
+ &#8226;   <a href="#win32api">win32api</a>
+ &#8226;   <a href="#win32con">win32con</a>
+ &#8226;   <a href="#win32gui">win32gui</a>
+ &#8226;   <a href="#win32gui_struct">win32gui_struct</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#Escape.py">Escape.py</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="utils.utils"></a>
+  <a target="code" href="///F:/Github%20Projects/Escape/utils/utils.py" type="text/plain"><tt>utils.utils</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#playsound">playsound</a>
+ &#8226;   <a href="#pynput">pynput</a>
+ &#8226;   <a href="#pynput.keyboard">pynput.keyboard</a>
+ &#8226;   <a href="#random">random</a>
+ &#8226;   <a href="#signal">signal</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#utils">utils</a>
+ &#8226;   <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#win32api">win32api</a>
+ &#8226;   <a href="#win32con">win32con</a>
+ &#8226;   <a href="#win32gui">win32gui</a>
+ &#8226;   <a href="#win32gui_struct">win32gui_struct</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#Escape.py">Escape.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="uu"></a>
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/uu.py" type="text/plain"><tt>uu</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -7839,6 +8251,17 @@ imports:
   <div class="import">
 imported by:
     <a href="#email.message">email.message</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="vms_lib"></a>
+  <a target="code" href="" type="text/plain"><tt>vms_lib</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#platform">platform</a>
 
   </div>
 
@@ -7862,6 +8285,7 @@ imports:
 imported by:
     <a href="#Escape.py">Escape.py</a>
  &#8226;   <a href="#argparse">argparse</a>
+ &#8226;   <a href="#ast">ast</a>
  &#8226;   <a href="#base64">base64</a>
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#collections">collections</a>
@@ -7879,6 +8303,7 @@ imported by:
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#os">os</a>
@@ -7932,7 +8357,8 @@ imported by:
   <a name="win32api"></a>
   <tt>win32api</tt> <span class="moduletype"><tt>c:\users\weng_\appdata\local\programs\python\python38-32\lib\site-packages\win32\win32api.pyd</tt></span>  <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
+    <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -7943,7 +8369,8 @@ imported by:
   <a target="code" href="///C:/users/weng_/appdata/local/programs/python/python38-32/lib/site-packages/win32/lib/win32con.py" type="text/plain"><tt>win32con</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
+    <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
  &#8226;   <a href="#win32gui_struct">win32gui_struct</a>
 
   </div>
@@ -7954,7 +8381,8 @@ imported by:
   <a name="win32gui"></a>
   <tt>win32gui</tt> <span class="moduletype"><tt>c:\users\weng_\appdata\local\programs\python\python38-32\lib\site-packages\win32\win32gui.pyd</tt></span>  <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
+    <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
  &#8226;   <a href="#win32gui_struct">win32gui_struct</a>
 
   </div>
@@ -7979,7 +8407,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Escape.py">Escape.py</a>
+    <a href="#utils.shortcuts">utils.shortcuts</a>
+ &#8226;   <a href="#utils.utils">utils.utils</a>
 
   </div>
 
@@ -7990,6 +8419,7 @@ imported by:
   <tt>winreg</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#mimetypes">mimetypes</a>
+ &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
