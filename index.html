@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Finanza - Financial Services Website Template</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="static/css/css2.css" rel="stylesheet">
+
+<link href="static/css/all.min.css" rel="stylesheet">
+<link href="static/css/bootstrap-icons.css" rel="stylesheet">
+
+<link href="static/css/animate.min.css" rel="stylesheet">
+<link href="static/css/owl.carousel.min.css" rel="stylesheet">
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+<div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+
+
+<div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+<div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+<div class="col-lg-6 px-5 text-start">
+<small><i class="fa fa-map-marker-alt text-primary me-2"></i>https://github.com/kev1nweng/Escape</small>
+</div>
+<div class="col-lg-6 px-5 text-end">
+<small><i class="fa fa-envelope text-primary me-2"></i>feedback.escape@outlook.com</small>
+</div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+<a href="#" class="navbar-brand ms-4 ms-lg-0">
+<h1 class="display-5 text-primary m-0">Escape</h1>
+</a>
+<button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<div class="navbar-nav ms-auto p-4 p-lg-0">
+	  <div class="nav-item dropdown">
+	  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">下载&nbsp;</a>
+  <div class="dropdown-menu border-light m-0">
+    <a href="https://github.com/kev1nweng/Escape/releases" class="dropdown-item">Github</a>
+    <a href="#" class="dropdown-item">蓝奏云</a>
+</div>
+</div>
+  <a href="https://github.com/kev1nweng/Escape" class="nav-item nav-link active">Github 仓库</a><a href="index.html" class="nav-item nav-link active">首页</a>
+ </div>
+<div class="d-none d-lg-flex ms-2"> </div>
+</div>
+</nav>
+</div>
+
+
+<div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+<div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img class="w-100" src="static/picture/carousel-1.jpg" alt="Image">
+<div class="carousel-caption">
+<div class="container">
+<div class="row justify-content-start">
+<div class="col-lg-8">
+<p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Welcome to Escape</p>
+<h1 class="display-1 mb-4 animated slideInDown">让你在计算机课上<br>享受自由</h1>
+<p>&nbsp;</p>
+<a href="" class="btn btn-primary py-3 px-5 animated slideInDown">立即下载</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev"> <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next"> <span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+
+
+<div class="container-xxl py-5">
+<div class="container">
+<div class="row g-4 align-items-end mb-4">
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+<img class="img-fluid rounded" src="static/picture/Esc_lowres.png">
+</div>
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+<p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">关于这个程序&nbsp;</p>
+<h1 class="display-5 mb-4">起源</h1>
+<p class="mb-4">别问 问就是作者觉得学校电脑课太无聊了 一气之下写出这个程序</p>
+<div class="border rounded p-4">
+<nav>
+<div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+<button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab" data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story" aria-selected="true">没用的Tab</button>
+<button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="false">又一个没用的Tab</button>
+<button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision" aria-selected="false">还是没用的Tab</button>
+</div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+<div class="tab-pane fade show active" id="nav-story" role="tabpanel" aria-labelledby="nav-story-tab">
+<p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
+<p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+</div>
+<div class="tab-pane fade" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+<p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
+<p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+</div>
+<div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+<p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
+<p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid facts my-5 py-5">
+<div class="container py-5">
+<div class="row g-5">
+<div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+<i class="fa fa-users fa-3x text-white mb-3"></i>
+<h1 class="display-4 text-white">1人开发</h1>
+<span class="fs-5 text-white">独立开发</span>
+<hr class="bg-white w-25 mx-auto mb-0">
+</div>
+<div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+<i class="fa fa-check fa-3x text-white mb-3"></i>
+<h1 class="display-4 text-white">0.2.0</h1>
+<span class="fs-5 text-white">最新版本</span>
+<hr class="bg-white w-25 mx-auto mb-0">
+</div>
+<div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+<i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+<h1 class="display-4 text-white">6</h1>
+<span class="fs-5 text-white">个主要功能</span>
+<hr class="bg-white w-25 mx-auto mb-0">
+</div>
+<div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+<i class="fa fa-award fa-3x text-white mb-3"></i>
+<h1 class="display-4 text-white">6.25MB</h1>
+<span class="fs-5 text-white">超轻量</span>
+<hr class="bg-white w-25 mx-auto mb-0">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-xxl feature py-5">
+<div class="container">
+<div class="row g-5 align-items-center">
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+<p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">丰富的功能</p>
+<h1 class="display-5 mb-4">6大主要功能，<br>把极域拿捏得死死的&nbsp;</h1>
+<p class="mb-4">其中HomoChatter最为重量级（打广告</p>
+<a class="btn btn-primary py-3 px-5" href="https://github.com/kev1nweng/HomoChatter">前往HomoChatter仓库</a>
+</div>
+<div class="col-lg-6">
+<div class="row g-4 align-items-center">
+<div class="col-md-6">
+<div class="row g-4">
+<div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+<div class="feature-box border rounded p-4">
+<i class="fa fa-check fa-3x text-primary mb-3"></i>
+<h4 class="mb-3">结束极域教室主进程</h4>
+<p class="mb-3">采用强制结束的方式，<br>不会出现拒绝访问的情况</p>
+<a class="fw-semi-bold" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+</div>
+</div>
+<div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+<div class="feature-box border rounded p-4">
+<i class="fa fa-check fa-3x text-primary mb-3"></i>
+<h4 class="mb-3">内置注入器</h4>
+<p class="mb-3">我不到啊<br>你猜干嘛用的（）</p>
+<a class="fw-semi-bold" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+<div class="feature-box border rounded p-4">
+<i class="fa fa-check fa-3x text-primary mb-3"></i>
+<h4 class="mb-3">强力联网&nbsp;</h4>
+<p class="mb-3">老师一键断网？<br>分分钟解决&nbsp;
+  </p>
+<a class="fw-semi-bold" href="">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-xxl service py-5">
+<div class="container">
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">UI&nbsp;</p>
+<h1 class="display-5 mb-5">虽然是控制台程序<br>但是界面很友好</h1>
+</div>
+<div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+<div class="col-lg-4">
+<div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+<button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+<h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>菜单页面</h5>
+</button>
+<button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+<h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>执行功能</h5>
+</button>
+<button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+<h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>HomoChatter</h5>
+</button>
+<button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+<h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>注入器</h5>
+</button>
+</div>
+</div>
+<div class="col-lg-8">
+<div class="tab-content w-100">
+<div class="tab-pane fade show active" id="tab-pane-1">
+<div class="row g-4">
+<div class="col-md-6" style="min-height: 350px;">
+<div class="position-relative h-100">
+<img class="position-absolute rounded w-100 h-100" src="static/picture/mainWindow.png" style="object-fit: cover;" alt="">
+</div>
+</div>
+<div class="col-md-6">
+<h3 class="mb-4">列表菜单</h3>
+<p class="mb-4">输入功能序号即可使用<br>直接执行，不磨蹭<br>还是命令行效率最高</p>
+<p><i class="fa fa-check text-primary me-3"></i>操作快</p>
+<p><i class="fa fa-check text-primary me-3"></i>用户友好</p>
+<p><i class="fa fa-check text-primary me-3"></i>程序员最爱，懂的都懂</p>
+<a href="#" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab-pane-2">
+<div class="row g-4">
+<div class="col-md-6" style="min-height: 350px;">
+<div class="position-relative h-100">
+<img class="position-absolute rounded w-100 h-100" src="static/picture/mainWindow.png" style="object-fit: cover;" alt="">
+</div>
+</div>
+<div class="col-md-6">
+<h3 class="mb-4">显示执行过程中的信息</h3>
+<p class="mb-4">执行过程中的信息都会显示在控制台窗口<br>真的很有用（）<br>你问我有什么用？</p>
+<p><i class="fa fa-check text-primary me-3"></i>方便调试</p>
+<p><i class="fa fa-check text-primary me-3"></i>引导清晰</p>
+<p><i class="fa fa-check text-primary me-3"></i>可以装逼</p>
+<a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab-pane-3">
+<div class="row g-4">
+<div class="col-md-6" style="min-height: 350px;">
+<div class="position-relative h-100">
+<img class="position-absolute rounded w-100 h-100" src="static/picture/mainWindow.png" style="object-fit: cover;" alt="">
+</div>
+</div>
+<div class="col-md-6">
+<h3 class="mb-4">Homo必备</h3>
+ <p class="mb-4">撅入一个整数，<br>就可以输出一句Homo特有的话（喜<br>乱输可能会被撅哦（意味深</p>
+<p><i class="fa fa-check text-primary me-3"></i>Homo特有词库</p>
+<p><i class="fa fa-check text-primary me-3"></i>奇怪的Tips</p>
+<p><i class="fa fa-check text-primary me-3"></i>能玩一节课</p>
+<a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab-pane-4">
+<div class="row g-4">
+<div class="col-md-6" style="min-height: 350px;">
+<div class="position-relative h-100">
+<img class="position-absolute rounded w-100 h-100" src="static/picture/mainWindow.png" style="object-fit: cover;" alt="">
+</div>
+</div>
+<div class="col-md-6">
+<h3 class="mb-4">???</h3>
+<p class="mb-4">你猜干嘛用的捏（）<br>坐等大佬帮我写DLL<br>什么时候才能做出极域内界面（悲</p>
+<p><i class="fa fa-check text-primary me-3"></i>确实可以用的注入器</p>
+<p><i class="fa fa-check text-primary me-3"></i>未来可以用于复杂的反极域功能</p>
+<p><i class="fa fa-check text-primary me-3"></i>我不到啊</p>
+<a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid callback my-5 pt-5">
+<div class="container pt-5">
+<div class="row justify-content-center">
+<div class="col-lg-7">
+<div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">直接开摆！</p>
+<h1 class="display-5 mb-5">后面摆烂了，懒得改模板了</h1>
+</div>
+<div class="row g-3">
+<div class="col-sm-6">
+<div class="form-floating">
+<input type="text" class="form-control" id="name" placeholder="Your Name">
+<label for="name">Your Name</label>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-floating">
+<input type="email" class="form-control" id="mail" placeholder="Your Email">
+<label for="mail">Your Email</label>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-floating">
+<input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
+<label for="mobile">Your Mobile</label>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-floating">
+<input type="text" class="form-control" id="subject" placeholder="Subject">
+<label for="subject">Subject</label>
+</div>
+</div>
+<div class="col-12">
+<div class="form-floating">
+<textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+<label for="message">Message</label>
+</div>
+</div>
+<div class="col-12 text-center">
+<button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Projects</p>
+<h1 class="display-5 mb-5">We Have Completed Latest Projects</h1>
+</div>
+<div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
+<div class="project-item pe-5 pb-5">
+<div class="project-img mb-3">
+<img class="img-fluid rounded" src="static/picture/service-1.jpg" alt="">
+<a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+</div>
+<div class="project-title">
+<h4 class="mb-0">Financial Planning</h4>
+</div>
+</div>
+<div class="project-item pe-5 pb-5">
+<div class="project-img mb-3">
+<img class="img-fluid rounded" src="static/picture/service-2.jpg" alt="">
+<a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+</div>
+<div class="project-title">
+<h4 class="mb-0">Cash Investment</h4>
+</div>
+</div>
+<div class="project-item pe-5 pb-5">
+<div class="project-img mb-3">
+<img class="img-fluid rounded" src="static/picture/service-3.jpg" alt="">
+<a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+</div>
+<div class="project-title">
+<h4 class="mb-0">Financial Consultancy</h4>
+</div>
+</div>
+<div class="project-item pe-5 pb-5">
+<div class="project-img mb-3">
+<img class="img-fluid rounded" src="static/picture/service-4.jpg" alt="">
+<a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
+</div>
+<div class="project-title">
+<h4 class="mb-0">Business Loans</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
+<h1 class="display-5 mb-5">Exclusive Team</h1>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+<div class="team-item">
+<img class="img-fluid rounded" src="static/picture/team-1.jpg" alt="">
+<div class="team-text">
+<h4 class="mb-0">Kate Winslet</h4>
+<div class="team-social d-flex">
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+<div class="team-item">
+<img class="img-fluid rounded" src="static/picture/team-2.jpg" alt="">
+<div class="team-text">
+<h4 class="mb-0">Jac Jacson</h4>
+<div class="team-social d-flex">
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+<div class="team-item">
+<img class="img-fluid rounded" src="static/picture/team-3.jpg" alt="">
+<div class="team-text">
+<h4 class="mb-0">Doris Jordan</h4>
+<div class="team-social d-flex">
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+<a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Testimonial</p>
+<h1 class="display-5 mb-5">What Our Clients Say!</h1>
+</div>
+<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+<div class="testimonial-item">
+<div class="testimonial-text border rounded p-4 pt-5 mb-5">
+<div class="btn-square bg-white border rounded-circle">
+<i class="fa fa-quote-right fa-2x text-primary"></i>
+</div>
+Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+</div>
+<img class="rounded-circle mb-3" src="static/picture/testimonial-1.jpg" alt="">
+<h4>Client Name</h4>
+<span>Profession</span>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-text border rounded p-4 pt-5 mb-5">
+<div class="btn-square bg-white border rounded-circle">
+<i class="fa fa-quote-right fa-2x text-primary"></i>
+</div>
+Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+ </div>
+<img class="rounded-circle mb-3" src="static/picture/testimonial-2.jpg" alt="">
+<h4>Client Name</h4>
+<span>Profession</span>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-text border rounded p-4 pt-5 mb-5">
+<div class="btn-square bg-white border rounded-circle">
+<i class="fa fa-quote-right fa-2x text-primary"></i>
+</div>
+Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+</div>
+<img class="rounded-circle mb-3" src="static/picture/testimonial-3.jpg" alt="">
+<h4>Client Name</h4>
+<span>Profession</span>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-text border rounded p-4 pt-5 mb-5">
+<div class="btn-square bg-white border rounded-circle">
+<i class="fa fa-quote-right fa-2x text-primary"></i>
+</div>
+Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+</div>
+<img class="rounded-circle mb-3" src="static/picture/testimonial-4.jpg" alt="">
+<h4>Client Name</h4>
+<span>Profession</span>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="row g-5">
+<div class="col-lg-3 col-md-6">
+<h4 class="text-white mb-4">Our Office</h4>
+<p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+<p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+<p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="email-protection.html" class="__cf_email__" data-cfemail="d9b0b7bfb699bca1b8b4a9b5bcf7bab6b4">[email&#160;protected]</a></p>
+<div class="d-flex pt-2">
+<a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+<a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+<a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<h4 class="text-white mb-4">Services</h4>
+<a class="btn btn-link" href="">Financial Planning</a>
+<a class="btn btn-link" href="">Cash Investment</a>
+<a class="btn btn-link" href="">Financial Consultancy</a>
+<a class="btn btn-link" href="">Business Loans</a>
+<a class="btn btn-link" href="">Business Analysis</a>
+</div>
+<div class="col-lg-3 col-md-6">
+<h4 class="text-white mb-4">Quick Links</h4>
+<a class="btn btn-link" href="">About Us</a>
+<a class="btn btn-link" href="">Contact Us</a>
+<a class="btn btn-link" href="">Our Services</a>
+<a class="btn btn-link" href="">Terms & Condition</a>
+<a class="btn btn-link" href="">Support</a>
+</div>
+<div class="col-lg-3 col-md-6">
+<h4 class="text-white mb-4">Newsletter</h4>
+<p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+<div class="position-relative w-100">
+<input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+<button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid copyright py-4">
+<div class="container">
+<div class="row">
+<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+Copyright &copy; 2022.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+</div>
+<div class="col-md-6 text-center text-md-end">
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<script data-cfasync="false" src="static/js/email-decode.min.js"></script><script src="static/js/jquery-3.4.1.min.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+<script src="static/js/bootstrap.bundle.min.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+<script src="static/js/wow.min.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+<script src="static/js/easing.min.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+<script src="static/js/waypoints.min.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+<script src="static/js/owl.carousel.min.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+<script src="static/js/counterup.min.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+
+<script src="static/js/main.js" type="86c66b102650124d3fa7511a-text/javascript"></script>
+<script src="static/js/rocket-loader.min.js" data-cf-settings="86c66b102650124d3fa7511a-|49" defer=""></script></body>
+</html>
