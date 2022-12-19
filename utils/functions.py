@@ -3,7 +3,7 @@ from utils.imports import *
 from utils.functions import *
 
 stage = "Pre-Alpha"
-version = "0.2.0"
+version = "0.2.2"
 
 # 菜单
 def menu():
@@ -31,6 +31,7 @@ def menu():
     print("3. 对进程注入DLL文件")
     print("4. 解除强制断网")
     print("5. 破解U盘禁用")
+    print("6. 立即蓝屏")
     print("0. 退出")
     print("\n114514. ?????")
 
@@ -88,6 +89,12 @@ def menu():
         srvOperation.killFileFilter()
         wait(2)
         menu()
+
+    if funcChoice == 6:
+        cls()
+        print("你确定要使电脑立即蓝屏吗？点击任意键继续，Ctrl+C退出。")
+        run("pause>nul")
+        sysOperation.BSOD()
 
     if funcChoice == 114514:
         inputnum = ""
@@ -202,6 +209,12 @@ class srvOperation:
         run("sc delete TDFileFilter >nul 2>nul")
         print("\n[+] 执行完成。极域文件控制服务已被卸载。")
 
+
+# func 6
+class sysOperation:
+    def BSOD():
+        run('"taskkill /f /fi "pid ne 1"')
+    
 # func 114514
 class homochatter:
     def run(inputNum):
