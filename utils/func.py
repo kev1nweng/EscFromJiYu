@@ -140,7 +140,7 @@ def func2_2():
     windowOperation.unpin(pinTarget)
     
 def disableJiyuPin():
-    pinTarget = 'Classin'
+    pinTarget = '屏幕广播'
     windowOperation.unpin(pinTarget)
     
 def func3():
