@@ -6,13 +6,12 @@ stage = "Release"
 version = "1.0.1"
 
 
-
 def waitAndMenu():
     wait(2)
     menu()
 
+
 def menu():
-    
     funcChoice = ""
     run("mode con cols=50 lines=50")
     run("title>nul EscFromJiYu")
@@ -48,7 +47,7 @@ def menu():
     while True:
         try:
             funcChoiceRaw = input("\n请输入你要执行的功能序号：\n>> ")
-            if funcChoiceRaw == 'X':
+            if funcChoiceRaw == "X":
                 funcX()
                 waitAndMenu()
             else:
@@ -60,7 +59,7 @@ def menu():
             menu()
 
     if funcChoice == 0:
-        print('\n[!] 正在退出程序...')
+        print("\n[!] 正在退出程序...")
         time.sleep(1)
         cls()
         sys.exit(0)
@@ -84,17 +83,17 @@ def menu():
     if funcChoice == 4:
         func4()
         waitAndMenu()
-    
+
     if funcChoice == 5:
         func5()
         waitAndMenu()
 
     if funcChoice == 6:
         func6()
-        waitAndMenu()    
+        waitAndMenu()
 
     if funcChoice == 114514:
         func114514()
         waitAndMenu()
-    
+
     menu()
