@@ -280,6 +280,13 @@ def func6():
     print("[i] 执行完毕。")
 
 
+def func7():
+    cls()
+    run("arp -a")
+    print("\n点击任意键回到菜单。")
+    run("pause>nul")
+
+
 def func114514():
     inputnum = ""
     inputnum = input("\n撅入一个整数：\n>> ")

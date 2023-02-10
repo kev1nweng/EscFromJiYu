@@ -3,7 +3,7 @@ from utils.imports import *
 from utils.func import *
 
 stage = "Release"
-version = "1.0.1"
+version = "1.1.0"
 
 
 def waitAndMenu():
@@ -13,10 +13,9 @@ def waitAndMenu():
 
 def menu():
     funcChoice = ""
-    run("mode con cols=50 lines=50")
+    run("mode con cols=60 lines=50")
     run("title>nul EscFromJiYu")
     run("cls")
-    time.sleep(0.5)
 
     if stage == "Release":
         workingStatus = "(Stable)"
@@ -37,6 +36,7 @@ def menu():
     print("4. 立即蓝屏(可能不成功)")
     print("5. 解除教师断网")
     print("6. 解除U盘限制")
+    print("7. 扫描局域网")
     print("0. 退出")
     print("\n114514. ?????")
     print("")
@@ -91,6 +91,10 @@ def menu():
     if funcChoice == 6:
         func6()
         waitAndMenu()
+
+    if funcChoice == 7:
+        func7()
+        menu()
 
     if funcChoice == 114514:
         func114514()
