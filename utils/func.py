@@ -251,8 +251,10 @@ def func2_2():
 
 
 def disableJiyuPin():
-    pinTarget = "屏幕广播"
-    windowOperation.unpin(pinTarget)
+    while True:
+        pinTarget = "屏幕广播"
+        windowOperation.unpin(pinTarget)
+        time.sleep(0.05)
 
 
 def func3():

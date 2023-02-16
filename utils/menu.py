@@ -3,7 +3,7 @@ from utils.imports import *
 from utils.func import *
 
 stage = "Release"
-version = "1.1.0"
+version = "1.1.1"
 
 
 def waitAndMenu():
