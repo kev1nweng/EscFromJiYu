@@ -13,7 +13,7 @@ C = False
 
 def listenKeyboard():  # 键盘监听函数
     def on_press(key):
-        global ALT, Z, X, C, start_time, real_fps
+        global ALT, Z, X, C
         if (
             key == keyboard.Key.alt
             or key == keyboard.Key.alt_l
@@ -22,10 +22,16 @@ def listenKeyboard():  # 键盘监听函数
             ALT = True
         if key == keyboard.KeyCode(char="c") or key == keyboard.KeyCode(char="C"):
             C = True
+        if key == keyboard.KeyCode(char="x") or key == keyboard.KeyCode(char="X"):
+            X = True
 
         if ALT and C:
             ALT = C = False
             disableJiyuPin()
+
+        if ALT and X:
+            ALT = X = False
+            kill("StudentMain.exe")
 
     def on_release(key):
         global ALT, Z, X, C
@@ -37,6 +43,8 @@ def listenKeyboard():  # 键盘监听函数
             ALT = False
         if key == keyboard.KeyCode(char="c") or key == keyboard.KeyCode(char="C"):
             C = False
+        if key == keyboard.KeyCode(char="x") or key == keyboard.KeyCode(char="X"):
+            X = False
 
     with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
         listener.join()

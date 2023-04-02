@@ -31,7 +31,7 @@ class windowOperation:
         except Exception:
             print("\n[!] 执行出现错误。请检查窗口标题是否正确后重试。")
 
-    def unpin(windowTitle):
+    def unpin(windowTitle, isForced=False):
         try:
             hwnd = win32gui.FindWindow(None, windowTitle)  # 获取所有窗口句柄
             # hwnd = win32gui.FindWindow('xx.exe', None)
@@ -60,10 +60,19 @@ class windowOperation:
                 0,
                 win32con.SWP_SHOWWINDOW | win32con.SWP_NOSIZE | win32con.SWP_NOMOVE,
             )
+            if isForced == True:
+                # 禁止再次置顶
+                win32gui.SetWindowLong(
+                    hwnd,
+                    win32con.GWL_EXSTYLE,
+                    win32gui.GetWindowLong(hwnd, win32con.GWL_EXSTYLE)
+                    & ~win32con.WS_EX_TOPMOST,
+                )
             if __name__ == "__main__":
                 pass
         except Exception:
-            print("\n[!] 执行出现错误。请检查窗口标题是否正确后重试。")
+            if isForced != True:
+                print("\n[!] 执行出现错误。请检查窗口标题是否正确后重试。")
 
 
 class processOperation:
@@ -232,7 +241,7 @@ class homochatter:
         run("cls")
 
 
-# 结束JiYu主程序
+# 结束极域主程序
 def func1():
     kill("StudentMain.exe")
     print("\n[+] 执行完成。")
@@ -247,14 +256,12 @@ def func2_1():
 def func2_2():
     pinTarget = ""
     pinTarget = input("\n请输入你要取消置顶的窗口标题: \n>> ")
-    windowOperation.unpin(pinTarget)
+    windowOperation.unpin(pinTarget, False)
 
 
 def disableJiyuPin():
-    while True:
-        pinTarget = "屏幕广播"
-        windowOperation.unpin(pinTarget)
-        time.sleep(0.05)
+    pinTarget = "屏幕广播"
+    windowOperation.unpin(pinTarget, True)
 
 
 def func3():

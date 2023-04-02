@@ -3,4 +3,4 @@
 *.pyc
 /utils/__pycache__
 build.cmd
-/spyxx
+/misc
