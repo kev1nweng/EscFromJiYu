@@ -3,7 +3,7 @@ from utils.imports import *
 from utils.func import *
 
 stage = "Release"
-version = "1.2.0"
+version = "1.3.0"
 
 
 def waitAndMenu():
@@ -41,8 +41,8 @@ def menu():
     print("\n114514. ?????")
     print("")
     print("--- Danger Zone ---\n")
-    print("X. UDP重放攻击 (by ht0Ruial)\n此选项存在问题，暂时无法使用。")
-    print("\n按下 Alt+C 强制解除屏幕广播置顶。\n按下 Alt+X 立即结束极域进程。\n* 此软件仅供学习交流使用，\n作者不对该软件造成的任何事情负责。")
+    print("X. UDP重放攻击 (by ht0Ruial)")
+    print("\n按下 Alt+C 强制解除屏幕广播置顶。\n按下 Alt+X 立即结束极域进程。\n按下 Alt+Z 挂起极域。\n按下 Alt+A 恢复挂起的极域。\n* 此软件仅供学习交流使用，\n作者不对该软件造成的任何事情负责。")
 
     while True:
         try:

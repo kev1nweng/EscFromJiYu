@@ -61,6 +61,15 @@ class windowOperation:
                 win32con.SWP_SHOWWINDOW | win32con.SWP_NOSIZE | win32con.SWP_NOMOVE,
             )
             if isForced == True:
+                win32gui.SetWindowPos(
+                    hwnd,
+                    win32con.HWND_BOTTOM,
+                    0,
+                    0,
+                    0,
+                    0,
+                    win32con.SWP_NOMOVE | win32con.SWP_NOSIZE | win32con.SWP_NOACTIVATE,
+                )
                 # 禁止再次置顶
                 win32gui.SetWindowLong(
                     hwnd,
