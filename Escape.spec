@@ -7,7 +7,7 @@ block_cipher = None
 a = Analysis(
     ['Escape.py'],
     pathex=[],
-    binaries=[],
+    binaries=[('msg.exe', '.\\')],
     datas=[],
     hiddenimports=[],
     hookspath=[],
@@ -36,7 +36,7 @@ exe = EXE(
     upx_exclude=[],
     runtime_tmpdir=None,
     console=True,
-    disable_windowed_traceback=False,
+    disable_windowed_traceback=True,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,

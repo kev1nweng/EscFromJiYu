@@ -2,8 +2,8 @@ from utils.shortcuts import *
 from utils.imports import *
 from utils.func import *
 
-stage = "Release"
-version = "1.3.0"
+stage = ["Release", "Nightly"][0]
+version = "1.3.1"
 
 
 def waitAndMenu():
@@ -20,9 +20,9 @@ def menu():
     if stage == "Release":
         workingStatus = "(Stable)"
     else:
-        workingStatus = "(Work in progress)"
+        workingStatus = "(Preview)"
 
-    nameStr = "EscFromJiYu by kev1nweng"
+    nameStr = "EscFromJiYu by kW"
     print(nameStr)
     print(stage, version, workingStatus)
 
@@ -32,15 +32,14 @@ def menu():
     print("2. 置顶操作")
     print("+ 2.1 置顶窗口")
     print("+ 2.2 取消置顶")
-    print("3. 对进程注入DLL文件")
+    print("3. 对进程注入 DLL 文件")
     print("4. 立即蓝屏(可能不成功)")
     print("5. 解除教师断网")
     print("6. 解除U盘限制")
     print("7. 扫描局域网")
+    print("8. 向 IP 地址发送消息")
     print("0. 退出")
-    print("\n114514. ?????")
-    print("")
-    print("--- Danger Zone ---\n")
+    print("\n--- Danger Zone ---\n")
     print("X. UDP重放攻击 (by ht0Ruial)")
     print("\n按下 Alt+C 强制解除屏幕广播置顶。\n按下 Alt+X 立即结束极域进程。\n按下 Alt+Z 挂起极域。\n按下 Alt+A 恢复挂起的极域。\n* 此软件仅供学习交流使用，\n作者不对该软件造成的任何事情负责。")
 
@@ -96,8 +95,8 @@ def menu():
         func7()
         menu()
 
-    if funcChoice == 114514:
-        func114514()
-        waitAndMenu()
+    if funcChoice == 8:
+        func8()
+        menu()
 
     menu()

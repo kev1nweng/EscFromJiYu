@@ -12,7 +12,7 @@ C = False
 Z = False
 A = False
 
-jiYuHandle = win32api.FindWindow(None, "屏幕广播")
+jiYuHandle = win32gui.FindWindow(None, "屏幕广播")
 
 def listenKeyboard():  # 键盘监听函数
     def on_press(key):
